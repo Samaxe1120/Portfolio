@@ -1,0 +1,154 @@
+
+
+
+#contactpage {
+  height: 100%;
+  width: 100%;
+  background: 	/* fallback for old browsers */
+-webkit-linear-gradient(to right, #ff9966,#ff5e62);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff9966 100%, #ff5e62 100%);
+  background-size: cover;
+
+}
+
+
+
+h1#contacttitle{
+  position: relative;
+display: inline-block;
+padding: 1rem;
+    font-size: 5rem;
+    color: white;
+   padding-left: 45%;
+    outline: none;
+
+    }
+
+#contacttitle {
+  transform: translateY(40rem);
+    animation: pop-in 1.3s ease-out forwards;
+    opacity: 0;
+}
+
+
+
+div.row1{
+  display: inline-flex;
+margin-top: 12rem;
+  
+
+}
+
+h1#git{
+  margin-top: 3
+}
+
+// Contact location
+.container1 {
+  transform: translateX(-1%) translateY(85%)
+  // padding-top: 10rem;
+  // padding-left:8%;
+}
+#email{
+  border: .5rem dotted transparent;
+  border-width: .5rem;
+  }
+
+#email.email1{
+  transform: translateY(2rem);
+  box-sizing: border-box;
+    position: absolute;
+   font-size: 3rem;
+    margin-left:10%;
+  color: #fff;
+  border-radius: 10rem;
+  padding: 3rem;
+  transition: 0.2s
+  }
+
+#git{
+  border: .5rem dotted transparent;
+  padding: 5rem;
+  position: absolute;
+  font-size: 3rem;
+ margin-left: 80%;
+ transform: translateY(1.5rem)
+ 
+}
+
+#codepen{
+  border: .5rem dotted transparent;
+  padding: 5rem;
+    text-decoration: none;
+  position: absolute;
+  margin-left: 45%;
+ font-size: 3rem;
+ transform: translateY(1.5rem)
+   
+}
+
+.links{
+  box-sizing: border-box;
+   border-width: 5px;
+  padding: 3rem;
+ text-decoration: none;
+ z-index: 10;
+  color: #fff;
+  transition: all 
+
+}
+
+
+
+
+.links:hover{
+  color: lightblue;
+  text-decoration: none;
+}
+
+a.links.all:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+#email:hover{ 
+       transform: Scale(1.5) translateY(2.5rem);
+      }
+
+
+#git:hover{ 
+      transform: Scale(1.5) translateY(2.5rem);
+      }
+
+
+// 
+#codepen:hover{ 
+      transform: Scale(1.5) translateY(2.5rem);
+            }
+
+@keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(25, 25);
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(40, 40);
+    }
+  }
+  

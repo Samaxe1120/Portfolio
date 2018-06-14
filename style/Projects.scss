@@ -1,0 +1,414 @@
+
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+$font: Underworld Odd;
+
+// for Desktop
+@media only screen and (min-width: 1200px) {
+    body{
+		width: 100%;
+		overflow-x: hidden;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    body{
+		width: 1287px;
+		overflow-x: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  body {
+        width: 100%;
+    }
+}
+
+@font-face {
+	font-family: 'Underworld Odd';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Underworld Odd'), url('Underodd.woff') format('woff');
+	}
+  
+	
+@font-face {
+	font-family: 'Earth Memory';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Earth Memory'), url('Earth-Memory.woff') format('woff');
+	}
+
+	.container{
+		transform: translateX(10%);
+	}
+.containertitle {
+	position: relative;
+	transform: translateX(43.5%);
+	background: none;
+	display: blex;
+	align-items: center;
+	justify-content: center;
+		
+	svg {
+		max-width: 45rem;
+		width: 100%;
+		height: auto;
+		fill: none;
+		stroke: white;
+		stroke-width: 4;
+		
+		tspan > tspan {
+			stroke-dasharray: 1500;
+			stroke-dashoffset: -1500;
+			
+			@for $i from 1 through 15 {
+				
+				&:nth-of-type(#{$i}) {
+					animation: draw 1500ms #{$i * 150}ms forwards;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
+@keyframes draw {
+	
+	100% {
+		stroke-dashoffset: 0;
+	}
+	
+}
+
+// Name
+#sam {
+	transform: translateX(-10%);
+	color: #faaa5a;
+	text-shadow: 0.1rem -0.5rem 0.2rem rgba(250, 150, 90, 0.5);
+	font-family: $font;
+	text-align: center;
+	padding: 2rem;
+	letter-spacing: 2rem;
+	outline: none; }
+  
+  #sam2 {
+	transform: translateX(-10%);
+	text-shadow: 0.5rem 0.2rem 0.2rem rgba(250, 170, 90, 0.5);
+	color: #faaa5a;
+	font-family: $font;
+	text-align: center;
+	transition: all .2s; }
+
+// project title
+h1#title{
+	
+	color:white;
+position: relative;
+	height: -1rem;
+	margin-left: 43%;
+	margin-bottom: 1rem;
+		color: lightgrey;
+	font-size: 5rem;
+	font-family: $font;
+	line-height: none;
+	outline: none;
+}
+
+h1#contacttitle {
+	position: relative;
+	display: inline-block;
+	padding: 1rem;
+	font-family: $font;
+	font-size: 5rem;
+	color: white;
+	padding-left: 42% !important;
+	outline: none; }
+
+	
+#bootstrap-overrides.h1{
+	padding-bottom: 10%;
+	color: $color-heading1;
+	font-family: roboto;
+	text-align: center;
+}
+
+#selfie {
+	animation: floatText 5s infinite;
+	-webkit-animation: floatText 5s infinite; 
+}
+.me {
+	border: .5rem solid lightpink;
+	padding: 0;
+	background-color: rgba(155, 100, 100, 0.5);
+	height: 27rem;
+	width: 19rem;
+	margin-left: 2rem;
+	transform: translateY(0%);
+	float: right;
+	margin: 1.66%;
+		border-radius: 25%;
+	animation-fill-mode: backwards;
+	animation: moveinBottom 1s ease-in;
+	-webkit-animation: moveinBottom 1s ease-in; }
+  
+
+	h1#special.h2{
+		transform: translateY(4rem);
+		text-align: center;
+		color: $color-heading1;
+		font-family: roboto;
+					padding-bottom: 10%;
+						
+	}
+
+.pic , .codepen{
+	background-size: cover;
+	height: 250px;
+	animation: floatText 5s infinite;
+	-webkit-animation: floatText 5s infinite;
+}
+ 
+
+
+.pic{
+	margin-top: 50px;
+}
+
+#titleskills{
+	height: 10em;
+	color: lightcyan;
+	position: relative;
+	font-family: Underworld Odd;
+	transform: translateX(30%) translateY(-20%);
+}
+
+.skillgroup{
+		position: relative;
+		display: inline-block;
+transform: translateX(0%) translateY(-100%);
+				}
+
+.html5{
+	height: 3.5em;
+	margin: 2em;
+	animation: expand 8s infinite;
+	
+}
+
+.css3{
+	height: 3.5em;
+	margin: 2em;
+   animation: expand 8s infinite;
+   
+	 }
+	 
+
+.jquery{
+	height: 3.5em;
+	margin: 2em;
+animation: expand 8s infinite;
+
+}
+
+.react{
+	height: 3.5em;
+	margin: 2em;
+	
+	animation: expand 8s infinite;
+	
+}
+
+.javascript{
+	margin: 2em;
+	height: 3.5em;
+	animation: expand 8s infinite;
+	
+}
+
+
+.nodejs{
+	margin: 2em;
+	height: 4.5em;
+	animation: expand 8s infinite;
+	
+}
+
+
+.git{
+	height: 3.5em;
+	margin: 2em;
+	animation: expand 8s infinite;
+	
+}
+
+
+.github1{
+	margin: 2em;
+	height: 3.5em;
+	animation: expand 8s infinite;
+	 
+}
+
+
+.bootstrap{
+	margin: 2em;
+	height: 3.5em;
+ animation: expand 8s infinite;
+	}
+
+.sass{
+	margin: 2em;
+	height: 3.5em;
+
+}
+
+.btn{
+	margin: 2em;
+	float: right;
+	height: 4em;
+	width: 7em;
+	background-color: lightcoral;
+}
+
+
+.fixed {
+	position: fixed;
+	right: 5%;
+	height: 70px;
+	z-index: 1; }
+  
+.bullets{
+		transform: translateX(60%);
+}
+.bullet{
+	transform: translateX(-23px);
+	float: left;
+	width: 2em;
+   border: 2px white dashed;
+}
+
+.bullet2{
+	transform: translateY(-17px) translateX(-51.5px);
+	float: left;
+	width: 2em;
+   border: 2px white dashed;
+}
+
+.bullet3{
+	transform: translateY(12px) translateX(-23px);
+	float: left;
+	width: 2em;
+   border: 2px white dashed;
+}
+.dropdown{
+	padding-left: 20%;
+}
+	
+
+
+button.btncode {
+	position: relative;
+	border: none;
+	background-color: lightgrey;
+	transform: translateX(180%) translateY(-50%); }
+
+	
+.row1.flex{
+	display: inline-block;
+transform: translateX(140%) translateY(0);
+ 
+	margin-top: 10rem;
+	
+	 width: 30%;
+ }
+
+ 
+.line {
+	border: 0;
+	clear:both;
+	display:block;
+	width: 96%;               
+	background-color: white;
+	overflow-x: hidden;
+	height: 1px;
+  }
+ .flex{
+	 display: flex;
+	 
+ }
+
+ .pic, .greek {
+
+	height: 250px;
+	width: 350px;
+	animation: floatText 5s infinite;
+	-webkit-animation: floatText 5s infinite; }
+
+	.greek:hover:after{
+		background-color: red;
+		content:"Made with React"
+	}
+
+	.pic, .swapi{
+		height: 250px;
+		width: 350px;
+		animation: floatText 5s infinite;
+		-webkit-animation: floatText 5s infinite; 
+	}
+
+ .thumbnail:hover{
+     border: red dotted 5px;
+	    
+} 
+
+.descr1{
+	width: 350px;
+	font-size: 1em;
+}
+
+.descr2{
+	width: 350px;
+	font-size: 1em;
+}
+
+
+div.col-lg-8{
+	position: relative;
+	
+}
+
+.box, .box2, .h1 .h2{
+	
+	transform: translateX(-5%);
+	}
+
+
+
+
+#section2 {
+	border: none;
+	position: relative;
+	padding-left: 25%;
+	transform: translateX(3%);
+	width: 75%;
+	margin-top: 10%;
+	list-style-type: none; }
+  
+#section3{
+	transform: translateY(-150%);
+}
+
+button.btncode{
+	position: position;
+	border: none;
+	background-color: lightgrey;
+	transform: translateX(180%) translateY(-50%);
+	
+}
+
