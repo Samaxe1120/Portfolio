@@ -130,7 +130,7 @@ transform: translateX(5%)
     transform: translateX(30%) translateY(-20%);
   }
 .skillgroup{
-transform: translateX(20%) translateY(-80%);
+transform: translateX(0%) translateY(-80%);
 }
 
 .descr1 {
