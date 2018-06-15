@@ -25,9 +25,7 @@
 
   #titleskills{
         transform: translateX(45%) translateY(0%);
-    
-    color: red;
-      }
+       }
 
       .h1,.h2 {
         white-space: nowrap;
@@ -55,7 +53,6 @@ transform: translateX(20%)
   #titleskills{
     transform: translateX(35%) translateY(0%);
 
-color: red;
   }
   
   #email.email1{
@@ -102,6 +99,7 @@ transform: translateX(5%)
   }
 
   #titleskills{
+    color: lightcyan;
     transform: translateX(29%) translateY(0%);
    
       }
@@ -461,6 +459,7 @@ h1#special.h2 {
   margin-top: 50px; }
 
 #titleskills {
+  color: lightcyan;
   height: 10em;
     position: relative;
   font-family: Underworld Odd;
