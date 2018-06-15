@@ -1,4 +1,161 @@
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+
+/* mobile */
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+  
+  .skillgroup{
+    
+    display: inline-block;
+ transform: translateX(30%) translateY(-27%);
+  overflow-x: hidden;
+  }
+
+  #headphones{
+    display: none;
+  }
+
+  
+.descr1 {
+  width: 367px;
+  font-size: 1em; }
+
+.descr2 {
+  width: 360px;
+  font-size: 1em; }
+
+  #titleskills{
+        transform: translateX(45%) translateY(0%);
+    
+    color: red;
+      }
+
+      .h1,.h2 {
+        white-space: nowrap;
+  transform: translateX(20%)
+
+      }
+
+      #email.email1{
+        margin-left: -5%;
+      }
+
+      .containertitle{
+        transform: translateX(23.5%);
+      }
+}
+
+/* extra small mobile */
+@media only screen and (min-width: 100px) and (max-width: 319px){
+  .h1,.h2 {
+    white-space: nowrap;
+transform: translateX(20%)
+
+  }
+
+  #titleskills{
+    transform: translateX(35%) translateY(0%);
+
+color: red;
+  }
+  
+  #email.email1{
+    margin-left: -5%;
+  }
+
+  .codepen{
+
+    margin-left: 10%;
+  }
+
+  #git{
+    transform: translateY(-20%);
+    margin-left: 75%;
+  }
+.descr1 {
+  width: 367px;
+  font-size: 1em; }
+
+.descr2 {
+  width: 360px;
+  font-size: 1em; }
+
+#headphones{
+  display: none;
+}
+
+  .skillgroup{
+    display: inline-block;
+ transform: translateX(30%) translateY(-20%);
+
+  }
+}
+/* tablet */
+@media only screen and (min-width:660px) and (max-width:799px){
+  .containertitle{
+    transform: translateX(28%)
+  }
+
+  .h1,.h2 {
+    white-space: nowrap;
+transform: translateX(5%)
+
+  }
+
+  #titleskills{
+    transform: translateX(29%) translateY(0%);
+   
+      }
+
+      .descr1 {
+        width: 367px;
+        font-size: 1em; }
+      
+      .descr2 {
+        width: 360px;
+        font-size: 1em; }
+           
+        
+
+  .skillgroup{
+    display: inline-block;
+ transform: translateX(21%) translateY(-60%);
+  overflow-x: hidden;
+  }
+
+}
+
+/* desktop */
+@media only screen and (min-width:800px) and (max-width: 2600px){
+
+  #titleskills{
+    color: lightcyan;
+    transform: translateX(30%) translateY(-20%);
+  }
+.skillgroup{
+transform: translateX(20%) translateY(-80%);
+}
+
+.descr1 {
+  width: 367px;
+  font-size: 1em; }
+
+.descr2 {
+  width: 360px;
+  font-size: 1em; }
+
+.box, .box2, .h1 .h2 {
+  white-space: nowrap;
+  transform: translateX(-5%)
+}
+
+#email.email1{
+  margin-left: 10%;
+}
+
+.containertitle{
+  transform: translateX(43.5%);
+}
+}
 body,
 html {
   height: 100%;
@@ -83,7 +240,7 @@ p {
 p {
   outline: solid .5rem #FC5185;
   transition: outline 0.6s linear;
-  margin: 0.5em;
+
   /* Increased margin since the outline expands outside the element */ }
 
 p:hover {
@@ -173,8 +330,7 @@ p {
 
 .containertitle {
   position: relative;
-  transform: translateX(43.5%);
-  background: none;
+   background: none;
   display: blex;
   align-items: center;
   justify-content: center; }
@@ -306,15 +462,13 @@ h1#special.h2 {
 
 #titleskills {
   height: 10em;
-  color: lightcyan;
-  position: relative;
+    position: relative;
   font-family: Underworld Odd;
-  transform: translateX(30%) translateY(-20%); }
+  }
 
 .skillgroup {
   position: relative;
-  display: inline-block;
-  transform: translateX(0%) translateY(-100%); }
+   }
 
 .html5 {
   height: 3.5em;
@@ -445,19 +599,12 @@ button.btncode {
 .thumbnail:hover {
   border: red dotted 5px; }
 
-.descr1 {
-  width: 350px;
-  font-size: 1em; }
 
-.descr2 {
-  width: 350px;
-  font-size: 1em; }
 
 div.col-lg-8 {
   position: relative; }
 
-.box, .box2, .h1 .h2 {
-  transform: translateX(-5%); }
+
 
 #section2 {
   border: none;
@@ -518,8 +665,7 @@ h1#git {
   box-sizing: border-box;
   position: absolute;
   font-size: 3rem;
-  margin-left: 10%;
-  color: #fff;
+    color: #fff;
   border-radius: 10rem;
   padding: 3rem;
   transition: 0.2s; }
